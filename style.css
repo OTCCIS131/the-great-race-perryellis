@@ -4,12 +4,10 @@ html{
     background-repeat: no-repeat;  
     background-position: 0vw 0vh;
     background-size: 100vw 100vh;
-
-  
 }
 
 .bo{
-    padding-top: 70vh;
+    padding-top: 60vh;
     height: 200px;
 }
 
@@ -17,7 +15,7 @@ html{
     height: 200px;
 }
 .blimp{
-    padding-bottom: 5vh;
+   
     padding-left: 80vw;
     width: 350px;
 }
