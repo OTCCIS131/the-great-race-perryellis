@@ -4,13 +4,18 @@ $(function(){
     winner: null;
     racer1: 0;
     racer2; 0;
-    intervall: null;
+    tick: 0;
+    interval: null;
 
-    
-  function startbtn(){
-     document.getElementById("demo").innerHTML = Math.random();
 
+  methods: {
+    letsRace(){
+      
+    }
   }
+      
+    
+ 
 
 
 })
