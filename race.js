@@ -10,6 +10,7 @@ $(function(){
         tick: 0,
         intervall: null,
          },
+         
         methods: {
 
             letsRace() {
@@ -21,7 +22,7 @@ $(function(){
                 this.interval = setInterval(() => {
                     this.moveRacer()
 
-                }, 90)
+                }, 100)
             },
 
             moveRacer() {
@@ -67,7 +68,7 @@ $(function(){
 
             boClass() {
                 if (!this.winner) return
-                return this.winner == 'bo'
+                return this.winner == 'bo' ? 'animated tada infinite winner' : 'animated rotateOut'
             },
 
             otherboStyles() {
@@ -76,16 +77,11 @@ $(function(){
                 }
             },
 
-            otherBoClass() {
+            otherboClass() {
                 if (!this.winner) return
-                return this.winner == 'otherbo'
-            },
-
-            winner() {
-                if (this.bo == this.otherbo) return null
-                    return this.bo > this.otherbo ? 'bo' : 'otherbo'
+                return this.winner == 'otherbo' ? 'animated tada infinite winner' : 'animated rotateOut'
             }
-        },
+        }
 
      })
   
